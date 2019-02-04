@@ -1,0 +1,267 @@
+
+/*BODY */
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    width: 100%;
+    height: 100%; 
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+/*BACKGROUND WALLPAPER*/
+.background{
+    background: url('../images/background.jpg');
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2 ;
+}
+/*SECTION : FORM WRAPPER STARTS*/
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*HEADING [LOGIN]*/
+header{
+    margin-bottom: 30px;
+}
+/*form wrapper [BACKGROUND-COLOR]*/
+.form-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vh;
+    border-radius: 12px;
+    padding: 5%;
+    background-image: linear-gradient(#7776fe, #ae28ef);
+}  
+/*IMAGE - LOGO*/ 
+.branding-logo{
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.branding-logo img{
+    width: 130px;
+}
+/*HEADING [LOGIN]*/
+.head-login{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;   
+}
+/*INPUT DETAILS*/
+.form-control{
+    padding-bottom: 10%;
+    position: relative; 
+    width: 270px; 
+    margin: 0 auto;
+}
+.form-control  input{
+    width: 270px;
+    padding:10px 0 ;
+    font-size: 14px; 
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+ .form-control label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    pointer-events: none;
+    transition: 0.25s;
+    color: #fff;
+}
+/* INPUT TYPE : ON FOCUS*/
+.form-control input[type="text"]:focus ~ label ,input[type="password"]:focus ~ label{
+    top: -12px;
+    font-size: 10px;
+
+}
+input[type="text"]:focus ,input[type="password"]:focus{
+width: 300px;
+}
+/* REMEMBER ME -- CHECKBOX */
+.form-control-checkbox{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+.form-control-checkbox label{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    display: inline;
+    position: relative;
+    color:#fff;
+   margin-bottom: 10px;
+}
+.form-control-checkbox input{
+    font-family: 'Rubik', sans-serif;
+   margin-top: 10px;
+}
+/*SUBMIT BUTTON*/
+.form-control-submit {
+text-align: center;
+}
+.form-control-submit .submit-btn{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: grey;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+    width: 20vh;
+    height: 6vh;
+    text-align: center;   
+}
+ /*RESPONSIVE FOR MAX-WIDTH:768 PX*/
+
+ 
+ @media only screen and (max-width: 968px){
+    .form-wrapper{
+        width: 1000px;
+    }
+    .branding-logo img{
+        width: 100px;
+    }
+    .head-login{
+        font-size: 30px; 
+    }
+    .form-wrapper{
+            width: 40%;
+    }
+    .form-control{  
+        width: 200px; 
+    }
+    .form-control  input{
+        width: 230px;
+    }
+    .form-control label{
+        font-size: 20px;
+    }
+    input[type="text"]:focus ,input[type="password"]:focus{
+        width: 250px;
+        }
+        input[type="text"]:focus ,input[type="password"]:focus{
+            width: 370px;         
+            }
+            .form-control input[type="text"]:focus ~ label ,input[type="password"]:focus ~ label{
+                font-size: 14px;
+                margin-top: -15px;
+            }   
+        .form-control-checkbox label{
+           font-size: 16px;
+        }
+        .form-control-submit .submit-btn{       
+            width: 15vh;
+            height: 5vh;
+   
+        }
+        .form-control input[type="text"]:focus ~ label ,input[type="password"]:focus ~ label{
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .form-wrapper{
+            width: 400px;
+        }
+        .branding-logo img{
+            width: 80px;
+        }
+        .head-login{
+            font-size: 23px; 
+        }
+        .form-control{  
+            width: 370px; 
+         
+        }
+        .form-control  input{
+            width: 340px;
+            font-size: 15px;
+        }
+        .form-control label{
+            font-size: 22px;
+        }
+        input[type="text"]:focus ,input[type="password"]:focus{
+            width: 370px;         
+            }
+            .form-control input[type="text"]:focus ~ label ,input[type="password"]:focus ~ label{
+                font-size: 14px;
+                margin-top: -15px;
+            }
+            .form-control-checkbox label{
+               font-size: 12px;
+               font-size: 23px;
+            }
+            .form-control-submit .submit-btn{       
+                width:100px;
+                height: 40px;
+       
+            }
+     }
+     @media only screen and (max-width: 360px){
+        section{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form-wrapper{
+            width: 200px;
+        }
+        .branding-logo img{
+            width: 60px;
+        }
+        .head-login{
+            font-size: 18px; 
+        }
+        .form-control{  
+            width: 160px;   
+        }
+        .form-control  input{
+            width: 140px;
+            font-size: 14px;
+        }
+        .form-control label{
+            font-size: 17px;
+        }
+        input[type="text"]:focus ,input[type="password"]:focus{
+            width: 155px;         
+            }
+            .form-control input[type="text"]:focus ~ label ,input[type="password"]:focus ~ label{
+                font-size: 14px;
+                margin-top: -15px;
+            }
+            .form-control-checkbox label{
+               font-size: 12px;
+               font-size: 17px;
+            }
+            .form-control-submit .submit-btn{       
+                width:100px;
+                height: 25px;
+       
+            }
+     }
+    
